@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PersonDB@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.2">
+    <root id="1"/>
+    <database id="2" parent="1" name="PersonDB">
+      <ObjectId>33039</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-06-14.11:32:40.377</IntrospectionTimestamp>
+      <IntrospectionStateNumber>2623440</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12113</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="files_id_seq">
+      <ObjectId>33542</ObjectId>
+      <StateNumber>2623440</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="10" parent="3" name="files">
+      <ObjectId>33544</ObjectId>
+      <StateNumber>2623440</StateNumber>
+    </table>
+    <column id="11" parent="10" name="path">
+      <Position>1</Position>
+      <DataType>varchar(4351)|0</DataType>
+      <StateNumber>2623440</StateNumber>
+    </column>
+    <column id="12" parent="10" name="hashsum">
+      <Position>2</Position>
+      <DataType>char(40)|0</DataType>
+      <StateNumber>2623440</StateNumber>
+    </column>
+    <column id="13" parent="10" name="id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2623440</StateNumber>
+      <SequenceName>files_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;files_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="14" parent="10" name="files_path_key">
+      <ObjectId>33553</ObjectId>
+      <ColNames>path</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="15" parent="10" name="files_pkey">
+      <ObjectId>33551</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="10" name="files_pkey">
+      <ObjectId>33552</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>files_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="17" parent="10" name="files_path_key">
+      <ObjectId>33554</ObjectId>
+      <ColNames>path</ColNames>
+      <UnderlyingIndexName>files_path_key</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
