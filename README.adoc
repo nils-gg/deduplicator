@@ -1,0 +1,16 @@
+= deduplicator
+:icons: font
+
+Find duplicate files. The duplicates are found by comparing SHA-512 hashsums. Right now the app uses a postgresql database.
+
+.TODO
+* make the app use a plaintext configuration file
+** specify default fileroot to search from
+** what kind of files should be compared (images, video, text..., all)
+** DB user settings
+** should the app search for new files, or just continue to hash unhashed files from the db
+** maybe some kind of wizard to create the config file
+* Copy all unique files into a folder
+** choose different naming schemes.
+* Add the ability to compare files from different computers.
+** copy unique files to a folder on a different computer (using SSH2)
