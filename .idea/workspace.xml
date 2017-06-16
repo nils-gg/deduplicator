@@ -6,16 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e784d762-cc2b-4491-8b68-172b29548e2e" name="Default" comment="- read config from file&#10;- config creation wizard">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nilsgg/postgresql/ConfigWizard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/com/nilsgg/postgresql/PostSQL.class" afterPath="$PROJECT_DIR$/out/production/untitled/com/nilsgg/postgresql/PostSQL.class" />
+    <list default="true" id="e784d762-cc2b-4491-8b68-172b29548e2e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c564e42a-cdf9-4590-86f7-ce5ca6ea79c2.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c564e42a-cdf9-4590-86f7-ce5ca6ea79c2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c564e42a-cdf9-4590-86f7-ce5ca6ea79c2/storage.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c564e42a-cdf9-4590-86f7-ce5ca6ea79c2/storage.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/project-template.xml" afterPath="$PROJECT_DIR$/.idea/project-template.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.adoc" afterPath="$PROJECT_DIR$/README.adoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/untitled/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nilsgg/postgresql/HashSumFile.java" afterPath="$PROJECT_DIR$/src/com/nilsgg/postgresql/HashSumFile.java" />
@@ -44,12 +42,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nilsgg/postgresql/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.adoc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.adoc">
+          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="120">
+                <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -130,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/HashSumFile.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/Main.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/ConfigWizard.java" />
+        <option value="$PROJECT_DIR$/README.adoc" />
       </list>
     </option>
   </component>
@@ -746,7 +758,7 @@
       <workItem from="1497446823451" duration="2390000" />
       <workItem from="1497454857603" duration="783000" />
       <workItem from="1497455669565" duration="5687000" />
-      <workItem from="1497630639373" duration="11185000" />
+      <workItem from="1497630639373" duration="11579000" />
     </task>
     <task id="LOCAL-00001" summary="working version">
       <created>1497631430767</created>
@@ -762,11 +774,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497632286924</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- read config from file&#10;- config creation wizard">
+      <created>1497647149454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497647149454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37753000" />
+    <option name="totallyTimeSpent" value="38147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1078,6 +1097,17 @@
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

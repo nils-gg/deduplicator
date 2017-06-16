@@ -4,12 +4,12 @@
 Find duplicate files. The duplicates are found by comparing SHA-512 hashsums. Right now the app uses a postgresql database.
 
 .TODO
-* make the app use a plaintext configuration file
-** specify default fileroot to search from
+* __Make the app use a plaintext configuration file__
+** __specify default fileroot to search from__
 ** what kind of files should be compared (images, video, text..., all)
-** DB user settings
-** should the app search for new files, or just continue to hash unhashed files from the db
-** maybe some kind of wizard to create the config file
+** __DB user settings__
+** __should the app search for new files, or just continue to hash unhashed files from the db__
+** __maybe some kind of wizard to create the config file__
 * Copy all unique files into a folder
 ** choose different naming schemes.
 * Add the ability to compare files from different computers.
