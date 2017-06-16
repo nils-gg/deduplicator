@@ -56,8 +56,8 @@
         <entry file="file://$PROJECT_DIR$/README.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <first_editor relative-caret-position="320">
+                <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -102,8 +102,8 @@
       <file leaf-file-name="PostSQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nilsgg/postgresql/PostSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state relative-caret-position="280">
+              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1497631066631" expanded="true" signature="992:1130" ph="CREATE TABLE... Files" />
@@ -136,11 +136,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/PostSQL.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/TreeWalker.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/HashSumFile.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/Main.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/ConfigWizard.java" />
+        <option value="$PROJECT_DIR$/src/com/nilsgg/postgresql/PostSQL.java" />
         <option value="$PROJECT_DIR$/README.adoc" />
       </list>
     </option>
@@ -758,7 +758,7 @@
       <workItem from="1497446823451" duration="2390000" />
       <workItem from="1497454857603" duration="783000" />
       <workItem from="1497455669565" duration="5687000" />
-      <workItem from="1497630639373" duration="11579000" />
+      <workItem from="1497630639373" duration="11777000" />
     </task>
     <task id="LOCAL-00001" summary="working version">
       <created>1497631430767</created>
@@ -781,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497647149454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update README">
+      <created>1497647573543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497647573543</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38147000" />
+    <option name="totallyTimeSpent" value="38345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -834,7 +841,8 @@
     <MESSAGE value="working version" />
     <MESSAGE value="README" />
     <MESSAGE value="- read config from file&#10;- config creation wizard" />
-    <option name="LAST_COMMIT_MESSAGE" value="- read config from file&#10;- config creation wizard" />
+    <MESSAGE value="update README" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1069,6 +1077,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nilsgg/postgresql/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nilsgg/postgresql/HashSumFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1079,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nilsgg/postgresql/PostSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="280">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1497631066631" expanded="true" signature="992:1130" ph="CREATE TABLE... Files" />
@@ -1092,19 +1108,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nilsgg/postgresql/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <first_editor relative-caret-position="320">
+            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
