@@ -10,8 +10,7 @@ import java.security.NoSuchAlgorithmException;
  * Created by Nils Gerstner on 2017-06-12.
  */
 class HashSumFile {
-    private String pc,path;
-    private String hashSum=null;
+    private String pc, path, hashSum=null;
     private int id = 0;
     private static int count=0;
 
@@ -28,7 +27,6 @@ class HashSumFile {
         this.path = path;
         this.id = id;
         this.pc = pc;
-        //this.hashSum = createFileChecksum(this.path);
     }
 
     int getId() {
@@ -39,13 +37,13 @@ class HashSumFile {
         return hashSum;
     }
 
-    String getPc(){
-        return pc;
-    }
+//    String getPc(){
+//        return pc;
+//    }
 
-    String getPath(){
-        return path;
-    }
+//    String getPath(){
+//        return path;
+//    }
 
     void createFileChecksum() throws IOException {
 

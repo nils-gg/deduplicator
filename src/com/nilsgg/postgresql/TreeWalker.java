@@ -10,23 +10,21 @@ import java.nio.file.Files;
 /**
  * Created by Nils Gerstner on 2017-06-13.
  */
-public class TreeWalker {
+class TreeWalker {
 
-    String dir;
-    File fileDir;
+    private String dir;
+    private File fileDir = new File(this.dir);
     private static int images = 0;
     private static int count = 0;
     private PostSQL hDB;
 
     TreeWalker(String dir, PostSQL hDB) {
         this.dir = dir;
-        this.fileDir = new File(this.dir);
         this.hDB = hDB;
 
     }
 
-
-    public void startWalk() {
+    void startWalk() {
         startWalk(fileDir);
     }
 
@@ -58,20 +56,20 @@ public class TreeWalker {
         }
     }
 
-    public static MimeType getMimeType(String fileName) throws MimeTypeParseException {
+    private static MimeType getMimeType(String fileName) throws MimeTypeParseException {
 
         if (fileName == null) {
             return new MimeType("application", "octet");
         }
         MimetypesFileTypeMap mimeTypes = new MimetypesFileTypeMap();
-        if (mimeTypes == null) {
+        //if (mimeTypes == null) {
             mimeTypes = (MimetypesFileTypeMap) FileTypeMap.getDefaultFileTypeMap();
             mimeTypes.addMimeTypes("image/gif gif GIF");
             mimeTypes.addMimeTypes("image/ief ief");
             mimeTypes.addMimeTypes("image/jpeg jpeg jpg jpe JPG");
             mimeTypes.addMimeTypes("image/tiff tiff tif");
             mimeTypes.addMimeTypes("image/png png PNG");
-        }
+        //}
         return new MimeType(mimeTypes.getContentType(fileName));
 
     }
