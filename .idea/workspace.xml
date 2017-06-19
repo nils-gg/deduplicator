@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e784d762-cc2b-4491-8b68-172b29548e2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/PostSQL.java" afterPath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/PostSQL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreadManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -93,17 +93,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostSQL.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PostSQL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/PostSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+            <state relative-caret-position="392">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2600#2601#0" expanded="false" />
-                <element signature="e#2670#2671#0" expanded="false" />
-                <element signature="e#3219#3220#0" expanded="false" />
-                <element signature="e#3265#3266#0" expanded="false" />
+                <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+                <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+                <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+                <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+                <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+                <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+                <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
               </folding>
             </state>
           </provider>
@@ -143,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/com/nilsgg/deduplicator/HashSumFile.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManagement.java" />
         <option value="$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java" />
+        <option value="$PROJECT_DIR$/src/com/nilsgg/deduplicator/PostSQL.java" />
       </list>
     </option>
   </component>
@@ -727,7 +730,7 @@
       <workItem from="1497630639373" duration="11880000" />
       <workItem from="1497818390449" duration="3894000" />
       <workItem from="1497852364767" duration="173000" />
-      <workItem from="1497852734939" duration="10718000" />
+      <workItem from="1497852734939" duration="11854000" />
     </task>
     <task id="LOCAL-00001" summary="working version">
       <created>1497631430767</created>
@@ -820,11 +823,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497872612890</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add streamBuffer in HashSumFile&#10;add new ThreadManager class">
+      <created>1497872671918</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1497872671918</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53233000" />
+    <option name="totallyTimeSpent" value="54369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -953,11 +963,13 @@
         <state relative-caret-position="320">
           <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
           </folding>
         </state>
       </provider>
@@ -1035,11 +1047,13 @@
         <state relative-caret-position="240">
           <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
           </folding>
         </state>
       </provider>
@@ -1081,11 +1095,13 @@
         <state relative-caret-position="640">
           <caret line="34" column="89" lean-forward="false" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
           </folding>
         </state>
       </provider>
@@ -1127,11 +1143,13 @@
         <state relative-caret-position="340">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
           </folding>
         </state>
       </provider>
@@ -1173,11 +1191,13 @@
         <state relative-caret-position="340">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
           </folding>
         </state>
       </provider>
@@ -1219,11 +1239,13 @@
         <state relative-caret-position="306">
           <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
           </folding>
         </state>
       </provider>
@@ -1234,20 +1256,6 @@
     <entry file="jar:///usr/java/jdk1.8.0_121/src.zip!/java/io/FileOutputStream.java" />
     <entry file="jar:///usr/java/jdk1.8.0_121/src.zip!/java/util/Scanner.java" />
     <entry file="jar:///usr/java/jdk1.8.0_121/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/PostSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2600#2601#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.properties" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1361,6 +1369,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59">
@@ -1371,11 +1387,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/PostSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="392">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <marker date="1497874340547" expanded="true" signature="1161:1299" ph="CREATE TABLE... Files" />
+            <marker date="1497874340547" expanded="true" signature="1527:1543" ph="DROP TABLE F... " />
+            <marker date="1497874340547" expanded="true" signature="1705:1765" ph="SELECT * FRO... files" />
+            <marker date="1497874340547" expanded="true" signature="2343:2395" ph="UPDATE files... " />
+            <marker date="1497874340547" expanded="true" signature="2768:2841" ph="SELECT EXIST... " />
+            <marker date="1497874340547" expanded="true" signature="2782:2840" ph="SELECT * FRO... pg_tables" />
+            <marker date="1497874340547" expanded="true" signature="3461:3507" ph="INSERT INTO Files... " />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -28,13 +28,14 @@ class PostSQL {
         props.setProperty("password", dbPassword);
         String DB_URL = "jdbc:postgresql://" + dataBase + "/filedb";
         this.conn = DriverManager.getConnection(DB_URL, props);
-        if (createTable)
+        if (createTable||isTable())
           createTable();
     }
 
     private void createTable() {
         try {
-            dropTable();
+            if(isTable())
+                dropTable();
             Statement stmt = conn.createStatement();
             stmt.execute("CREATE TABLE Files (path VARCHAR(4351) UNIQUE ,hashsum CHAR(128),pc CHAR(100),time TIMESTAMP NOT NULL DEFAULT now(),id SERIAL PRIMARY KEY)");
         } catch (SQLException e) {
@@ -84,21 +85,21 @@ class PostSQL {
         System.out.println(count + " HashSums updated in DB.");
     }
 
-//    private boolean getValueFromTable(String path) {
-//
+    private boolean isTable() {
+        String sql = "SELECT EXISTS(SELECT * FROM pg_catalog.pg_tables WHERE tablename='files')";
 //        String sql = "SELECT exists(SELECT * FROM Files WHERE path='" + path + "')";
-//        Statement stmt;
-//        try {
-//            stmt = conn.createStatement();
-//            stmt.executeQuery(sql);
-//            ResultSet rs = stmt.getResultSet();
-//            rs.next();
-//            return rs.getBoolean("exists");
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return false;
-//    }
+        Statement stmt;
+        try {
+            stmt = conn.createStatement();
+            stmt.executeQuery(sql);
+            ResultSet rs = stmt.getResultSet();
+            rs.next();
+            return rs.getBoolean("exists");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
     void insertIntoTable(String path) {
         this.insertIntoTable(path, "");
