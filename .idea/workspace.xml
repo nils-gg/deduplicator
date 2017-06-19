@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e784d762-cc2b-4491-8b68-172b29548e2e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/Config.java" afterPath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/TreeWalker.java" afterPath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/TreeWalker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -733,7 +731,7 @@
       <workItem from="1497630639373" duration="11880000" />
       <workItem from="1497818390449" duration="3894000" />
       <workItem from="1497852364767" duration="173000" />
-      <workItem from="1497852734939" duration="4862000" />
+      <workItem from="1497852734939" duration="4946000" />
     </task>
     <task id="LOCAL-00001" summary="working version">
       <created>1497631430767</created>
@@ -805,11 +803,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497855366621</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed some errors related to the config file.">
+      <created>1497857654432</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1497857654432</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47377000" />
+    <option name="totallyTimeSpent" value="47461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -835,7 +840,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586133" sideWeight="0.4466951" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586133" sideWeight="0.4466951" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -862,7 +867,8 @@
     <MESSAGE value="Changed name of .jar Artifact" />
     <MESSAGE value="Improved README" />
     <MESSAGE value="README, removed strike-through text (not supported by GitHub)" />
-    <option name="LAST_COMMIT_MESSAGE" value="README, removed strike-through text (not supported by GitHub)" />
+    <MESSAGE value="Fixed some errors related to the config file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some errors related to the config file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
