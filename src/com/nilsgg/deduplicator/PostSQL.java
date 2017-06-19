@@ -112,7 +112,7 @@ class PostSQL {
             pstmt.setString(2, hashSum);
             pstmt.executeUpdate();
 
-        } catch (SQLException e) {
+        } catch (SQLException ignore) {
         }
     }
 }
