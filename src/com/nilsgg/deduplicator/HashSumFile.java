@@ -1,4 +1,4 @@
-package com.nilsgg.postgresql;
+package com.nilsgg.deduplicator;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,6 +21,9 @@ class HashSumFile {
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
+    }
+    HashSumFile() throws IOException {
+        this(1,"1","1");
     }
 
     HashSumFile(int id, String path, String pc) throws IOException {

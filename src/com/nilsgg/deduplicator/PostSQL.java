@@ -1,4 +1,4 @@
-package com.nilsgg.postgresql;
+package com.nilsgg.deduplicator;
 import java.io.IOException;
 import java.sql.*;
 import java.util.*;
@@ -8,21 +8,25 @@ import java.util.*;
  */
 class PostSQL {
 
+    /*
+    private String dataBase = "localhost:5432";
+    private String dbUser = "username";
+    private String dbPassword = "password";
+    */
+
     private Connection conn;
     private static int count = 0;
-    PostSQL(boolean createTable) throws SQLException {
+    PostSQL(String dataBase, String dbUser, String dbPassword, boolean createTable) throws SQLException {
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
-        String password = "myPassword";
-        String username = "nils";
         Properties props = new Properties();
-        props.setProperty("user", username);
-        props.setProperty("password", password);
-        String DB_URL = "jdbc:postgresql://localhost:5432/filedb";
+        props.setProperty("user", dbUser);
+        props.setProperty("password", dbPassword);
+        String DB_URL = "jdbc:postgresql://" + dataBase + "/filedb";
         this.conn = DriverManager.getConnection(DB_URL, props);
         if (createTable)
           createTable();

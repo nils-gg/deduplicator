@@ -1,4 +1,4 @@
-package com.nilsgg.postgresql;
+package com.nilsgg.deduplicator;
 
 import javax.activation.FileTypeMap;
 import javax.activation.MimeType;
@@ -13,7 +13,7 @@ import java.nio.file.Files;
 class TreeWalker {
 
     private String dir;
-    private File fileDir = new File(this.dir);
+    private File fileDir = new File(this.dir != null ? this.dir : null);
     private static int images = 0;
     private static int count = 0;
     private PostSQL hDB;
@@ -61,7 +61,7 @@ class TreeWalker {
         if (fileName == null) {
             return new MimeType("application", "octet");
         }
-        MimetypesFileTypeMap mimeTypes = new MimetypesFileTypeMap();
+        MimetypesFileTypeMap mimeTypes;
         //if (mimeTypes == null) {
             mimeTypes = (MimetypesFileTypeMap) FileTypeMap.getDefaultFileTypeMap();
             mimeTypes.addMimeTypes("image/gif gif GIF");
