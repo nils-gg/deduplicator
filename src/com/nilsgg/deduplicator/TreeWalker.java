@@ -13,7 +13,6 @@ import java.nio.file.Files;
 class TreeWalker {
 
     private String dir;
-    private File fileDir = new File(this.dir != null ? this.dir : null);
     private static int images = 0;
     private static int count = 0;
     private PostSQL hDB;
@@ -25,7 +24,7 @@ class TreeWalker {
     }
 
     void startWalk() {
-        startWalk(fileDir);
+        startWalk(new File(dir));
     }
 
     private void startWalk(File dir) {

@@ -44,6 +44,8 @@ class Config {
             System.out.println("Config file not found...");
             new Wizard();
             load(); //load the new config file
+            System.out.println("\u001b[32m" + getDataBase());
+            System.out.println("\u001b[32m" + getDir());
         }
     }
 
@@ -57,7 +59,7 @@ class Config {
     }
 
     String getDataBase() {
-        return dataBase;
+        return dataBase.replaceAll("\\\\", "");
     }
 
     String getDbUser() {
@@ -113,7 +115,7 @@ class Config {
             setWalkFileTree(Boolean.parseBoolean(sc.nextLine()));
 
             System.out.println("please enter the location of your PostgresqlDB [" + dataBase + "] ");
-            setDataBase(sc.nextLine());
+            setDataBase(sc.nextLine().replaceAll("\\\\",""));
 
             System.out.println("Name of your DB user [" + dbUser + "] ");
             setDbUser(sc.nextLine());
