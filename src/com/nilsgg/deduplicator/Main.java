@@ -1,5 +1,6 @@
 package com.nilsgg.deduplicator;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -25,24 +26,27 @@ public class Main {
         PostSQL hDB = null;
         try {
             hDB = new PostSQL(dataBase, dbUser, dbPassword, createNewDBTable);
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         if (walkFileTree) {
+            System.out.println("Starting to walk through " + new File(dir).getAbsolutePath());
             TreeWalker treeWalker = new TreeWalker(dir, hDB);
             treeWalker.startWalk();
             treeWalker.print();
         }else
             System.out.println("Not walking the fileTree!");
 
-        assert hDB != null;
-        while (hDB.getHashableEntry() != null) {
-            HashSumFile hsf = hDB.getHashableEntry();
-            hsf.createFileChecksum();
-            hDB.updateHashSum(hsf.getHashSum(), hsf.getId());
-        }
+
+        ThreadManager threadManager = new ThreadManager(hDB);
+
+//        assert hDB != null;
+//        while (hDB.getHashableEntry() != null) {
+//            HashSumFile hsf = hDB.getHashableEntry();
+//            hsf.createFileChecksum();
+//            hDB.updateHashSum(hsf.getHashSum(), hsf.getId());
+//        }
         hDB.print();
         new HashSumFile().print();
     }
