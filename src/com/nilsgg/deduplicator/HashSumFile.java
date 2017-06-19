@@ -1,5 +1,6 @@
 package com.nilsgg.deduplicator;
 
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,6 +14,7 @@ class HashSumFile {
     private String pc, path, hashSum=null;
     private int id = 0;
     private static int count=0;
+    private double timeSize = 0;
 
     private static MessageDigest digest;
     static {
@@ -36,6 +38,10 @@ class HashSumFile {
         return id;
     }
 
+    public double getTimeSize() {
+        return timeSize;
+    }
+
     String getHashSum() {
         return hashSum;
     }
@@ -52,8 +58,11 @@ class HashSumFile {
 
 
         File file = new File(path);
+        double fileSizeInbytes = file.length();
+        double time = System.currentTimeMillis();
         //Get file input stream for reading the file content
         FileInputStream fis = new FileInputStream(file);
+        BufferedInputStream bufferedInputStream =  new BufferedInputStream(fis);
 
         //Create byte array to read data in chunks
         byte[] byteArray;
@@ -61,10 +70,10 @@ class HashSumFile {
         int bytesCount;
 
         //Read file data and update in message digest
-        while ((bytesCount = fis.read(byteArray)) != -1) digest.update(byteArray, 0, bytesCount);
+        while ((bytesCount = bufferedInputStream.read(byteArray)) != -1) digest.update(byteArray, 0, bytesCount);
 
         //close the stream; We don't need it now.
-        fis.close();
+        bufferedInputStream.close();
 
         //Get the hash's bytes
         byte[] bytes = digest.digest();
@@ -77,6 +86,9 @@ class HashSumFile {
         }
 
         count++;
+        // filesize / (endingtime - startingtime)
+        this.timeSize = fileSizeInbytes/(System.currentTimeMillis()-time);
+
         //return complete hash
         this.hashSum = sb.toString();
     }
