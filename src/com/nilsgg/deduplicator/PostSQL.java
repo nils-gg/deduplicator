@@ -62,7 +62,7 @@ class PostSQL {
             rs.next();
             int id = rs.getInt("id");
             String path = rs.getString("path");
-            String hashSum = rs.getString("hashsum");
+            //String hashSum = rs.getString("hashsum");
             String pc = rs.getString("pc");
             return new HashSumFile(id,path,pc);
         } catch (SQLException | IOException ignored){
