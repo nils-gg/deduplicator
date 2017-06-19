@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e784d762-cc2b-4491-8b68-172b29548e2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/deduplicator_jar/deduplicator.jar" afterPath="$PROJECT_DIR$/out/artifacts/deduplicator_jar/deduplicator.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/HashSumFile.java" afterPath="$PROJECT_DIR$/src/com/nilsgg/deduplicator/HashSumFile.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="ThreadManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="99" lean-forward="false" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -729,7 +727,7 @@
       <workItem from="1497630639373" duration="11880000" />
       <workItem from="1497818390449" duration="3894000" />
       <workItem from="1497852364767" duration="173000" />
-      <workItem from="1497852734939" duration="10615000" />
+      <workItem from="1497852734939" duration="10718000" />
     </task>
     <task id="LOCAL-00001" summary="working version">
       <created>1497631430767</created>
@@ -815,11 +813,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497857690587</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add streamBuffer in HashSumFile&#10;add new ThreadManager class">
+      <created>1497872612890</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1497872612890</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53130000" />
+    <option name="totallyTimeSpent" value="53233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -873,7 +878,8 @@
     <MESSAGE value="Improved README" />
     <MESSAGE value="README, removed strike-through text (not supported by GitHub)" />
     <MESSAGE value="Fixed some errors related to the config file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some errors related to the config file." />
+    <MESSAGE value="add streamBuffer in HashSumFile&#10;add new ThreadManager class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add streamBuffer in HashSumFile&#10;add new ThreadManager class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1367,8 +1373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/ThreadManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="99" lean-forward="false" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
