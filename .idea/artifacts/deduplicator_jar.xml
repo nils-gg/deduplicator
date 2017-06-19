@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="deduplicator:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/untitled_jar</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/deduplicator_jar</output-path>
     <root id="archive" name="deduplicator.jar">
       <element id="module-output" name="deduplicator" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../../postgresql-9.4.1212.jar" path-in-jar="/" />
