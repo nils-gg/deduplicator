@@ -28,7 +28,7 @@ class PostSQL {
         props.setProperty("password", dbPassword);
         String DB_URL = "jdbc:postgresql://" + dataBase + "/filedb";
         this.conn = DriverManager.getConnection(DB_URL, props);
-        if (createTable|| isFilesTable())
+        if (createTable|| !isFilesTable())
           createTable();
     }
 
