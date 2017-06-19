@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e784d762-cc2b-4491-8b68-172b29548e2e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/untitled_jar/untitled.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/untitled_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/deduplicator_jar.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/untitled.iml" afterPath="$PROJECT_DIR$/deduplicator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/deduplicator_jar/deduplicator.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,25 +30,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.adoc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -389,7 +373,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="untitled_jar" />
+              <option name="myItemId" value="deduplicator_jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -855,7 +839,7 @@
       <workItem from="1497630639373" duration="11880000" />
       <workItem from="1497818390449" duration="3894000" />
       <workItem from="1497852364767" duration="173000" />
-      <workItem from="1497852734939" duration="639000" />
+      <workItem from="1497852734939" duration="988000" />
     </task>
     <task id="LOCAL-00001" summary="working version">
       <created>1497631430767</created>
@@ -892,11 +876,25 @@
       <option name="project" value="LOCAL" />
       <updated>1497647737799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changed name of .jar Artifact">
+      <created>1497853396725</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497853396725</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed name of .jar Artifact">
+      <created>1497853541856</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1497853541856</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43154000" />
+    <option name="totallyTimeSpent" value="43503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -945,7 +943,8 @@
     <MESSAGE value="README" />
     <MESSAGE value="- read config from file&#10;- config creation wizard" />
     <MESSAGE value="update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README" />
+    <MESSAGE value="Changed name of .jar Artifact" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed name of .jar Artifact" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1556,22 +1555,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nilsgg/deduplicator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
