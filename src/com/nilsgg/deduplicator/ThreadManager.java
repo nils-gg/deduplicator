@@ -1,19 +1,17 @@
 package com.nilsgg.deduplicator;
 
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.Queue;
-import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 /**
  * Created by Nils Gerstner on 2017-06-19.
  */
-public class ThreadManager {
-    PostSQL hDB;
+class ThreadManager {
+    private PostSQL hDB;
 
 
-    public ThreadManager(PostSQL hDB) {
+    ThreadManager(PostSQL hDB) {
         this.hDB = hDB;
     }
 
